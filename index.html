@@ -3,54 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMSRO - Consultanță de Business & Soluții Software</title>
+    <title>BMSRO - Best Management Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body class="bg-slate-50 text-slate-800 font-['Inter']">
 
     <!-- Header / Navigatie -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-blue-900 tracking-wide">BMS<span class="text-blue-600">RO</span></div>
-            <nav class="hidden md:flex space-x-8 font-medium text-slate-600">
+    <header class="bg-white/90 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex flex-col">
+                <div class="text-2xl font-black text-blue-900 tracking-tight">BMS<span class="text-blue-600">RO</span></div>
+                <span class="text-[10px] font-bold text-slate-400 tracking-wider uppercase -mt-1">Best Management Solutions</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium text-slate-600 text-sm">
                 <a href="#despre" class="hover:text-blue-600 transition">Despre Noi</a>
                 <a href="#servicii" class="hover:text-blue-600 transition">Servicii</a>
                 <a href="#proces" class="hover:text-blue-600 transition">Metodologie</a>
                 <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
             </nav>
-            <a href="#contact" class="bg-blue-600 text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-blue-700 transition">Programează o Consultație</a>
+            <a href="#contact" class="bg-blue-600 text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-blue-700 transition shadow-md shadow-blue-500/20">Programează o Consultație</a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="max-w-7xl mx-auto px-6 py-20 text-center md:text-left md:flex items-center justify-between">
-        <div class="md:w-1/2 mb-10 md:mb-0">
-            <span class="text-blue-600 font-semibold tracking-wide uppercase text-sm bg-blue-50 px-3 py-1 rounded-full">Partenerul tău integrat de business</span>
-            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mt-4 leading-tight">Consultanță Financiar-Juridică & Software la Comandă</h1>
-            <p class="text-slate-600 text-lg mt-6 leading-relaxed">De la consultanță fiscală, contabilă și juridică, până la maparea proceselor economice și dezvoltarea aplicațiilor dedicate afacerii tale.</p>
+    <section id="despre" class="max-w-7xl mx-auto px-6 py-16 md:py-24 md:flex items-center justify-between gap-12">
+        <div class="md:w-1/2 mb-12 md:mb-0">
+            <span class="inline-block text-blue-600 font-semibold tracking-wide uppercase text-xs bg-blue-50 border border-blue-100 px-3 py-1.5 rounded-full mb-4">Consultanță & Tehnologie</span>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight">Consultanță Financiar-Juridică & Software la Comandă</h1>
+            <p class="text-slate-600 text-base sm:text-lg mt-4 font-medium leading-relaxed">Best Management Solutions — Partenerul tău pentru decizii inteligente și soluții software integrate. De la consultanță fiscală, contabilă și juridică, până la maparea proceselor economice și dezvoltarea aplicațiilor dedicate afacerii tale.</p>
+            
             <div class="mt-8 flex flex-col sm:flex-row gap-4">
-                <a href="#contact" class="bg-blue-600 text-white text-center px-6 py-3.5 rounded-lg font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-500/20">Solicită Ofertă Personalizată</a>
-                <a href="#servicii" class="border border-slate-300 text-slate-700 text-center px-6 py-3.5 rounded-lg font-semibold hover:bg-slate-100 transition">Explorează Serviciile</a>
+                <a href="#contact" class="bg-blue-600 text-white text-center px-6 py-3.5 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-500/20">Solicită Ofertă Personalizată</a>
+                <a href="#servicii" class="border border-slate-300 text-slate-700 text-center px-6 py-3.5 rounded-xl font-semibold hover:bg-slate-100 transition">Explorează Serviciile</a>
             </div>
         </div>
-        <div class="md:w-5/12 bg-gradient-to-br from-blue-900 to-slate-800 text-white p-8 rounded-2xl shadow-xl">
-            <h3 class="text-2xl font-bold mb-4">De ce BMSRO?</h3>
-            <ul class="space-y-4">
-                <li class="flex items-start gap-3">
-                    <span class="text-blue-400 font-bold">✓</span>
-                    <span>Viziune integrată: Financiar + Juridic + Tehnologie.</span>
-                </li>
-                <li class="flex items-start gap-3">
-                    <span class="text-blue-400 font-bold">✓</span>
-                    <span>Optimizarea și digitalizarea proceselor economice.</span>
-                </li>
-                <li class="flex items-start gap-3">
-                    <span class="text-blue-400 font-bold">✓</span>
-                    <span>Aplicații de business croite exact pe specificațiile tale.</span>
-                </li>
-            </ul>
+
+        <div class="md:w-1/2">
+            <div class="bg-gradient-to-br from-blue-900 via-slate-900 to-blue-950 text-white p-8 sm:p-10 rounded-3xl shadow-2xl relative overflow-hidden border border-slate-800">
+                <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl"></div>
+                <h3 class="text-2xl font-bold mb-6 text-white flex items-center gap-2">
+                    De ce BMSRO?
+                </h3>
+                <ul class="space-y-5 text-slate-200 text-sm sm:text-base">
+                    <li class="flex items-start gap-3">
+                        <span class="bg-blue-500/20 text-blue-400 p-1 rounded-lg font-bold text-xs">✓</span>
+                        <span><strong>Viziune integrată:</strong> Financiar + Juridic + Tehnologie.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="bg-blue-500/20 text-blue-400 p-1 rounded-lg font-bold text-xs">✓</span>
+                        <span><strong>Optimizare:</strong> Digitalizarea și eficientizarea proceselor economice.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="bg-blue-500/20 text-blue-400 p-1 rounded-lg font-bold text-xs">✓</span>
+                        <span><strong>Software dedicat:</strong> Aplicații de business croite exact pe specificațiile tale.</span>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -58,57 +68,69 @@
     <section id="servicii" class="bg-white py-20 border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold text-slate-900">Serviciile Noastre</h2>
-                <p class="text-slate-600 mt-4">Soluții complete de consultanță și tehnologie pentru optimizarea afacerii tale.</p>
+                <h2 class="text-3xl font-extrabold text-slate-900">Serviciile Noastre</h2>
+                <p class="text-slate-600 mt-3">Soluții complete de consultanță de management și tehnologie pentru afacerea ta.</p>
             </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="p-8 border border-slate-200 rounded-xl hover:shadow-lg transition bg-slate-50">
-                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center font-bold mb-6">01</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Consultanță Business & Taxe</h3>
-                    <p class="text-slate-600 leading-relaxed text-sm">Planificare fiscală, strategie de afaceri, optimizare de costuri și conformitate cu legislația în vigoare.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="p-6 border border-slate-200 rounded-2xl hover:shadow-xl transition bg-slate-50 flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-bold mb-4">01</div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Consultanță Business & Taxe</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">Planificare fiscală, strategie de afaceri, optimizare de costuri și conformitate legislativă.</p>
+                    </div>
                 </div>
-                <!-- Card 2 -->
-                <div class="p-8 border border-slate-200 rounded-xl hover:shadow-lg transition bg-slate-50">
-                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center font-bold mb-6">02</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Contabilitate & Juridic</h3>
-                    <p class="text-slate-600 leading-relaxed text-sm">Servicii contabile complete, raportare financiară, consultanță juridică comercială și redactare contracte.</p>
+                <div class="p-6 border border-slate-200 rounded-2xl hover:shadow-xl transition bg-slate-50 flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-bold mb-4">02</div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Contabilitate & Juridic</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">Servicii contabile complete, raportare financiară și consultanță juridică comercială.</p>
+                    </div>
                 </div>
-                <!-- Card 3 -->
-                <div class="p-8 border border-slate-200 rounded-xl hover:shadow-lg transition bg-slate-50">
-                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center font-bold mb-6">03</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Maparea Proceselor Economice</h3>
-                    <p class="text-slate-600 leading-relaxed text-sm">Analiza fluxurilor de lucru din companie, identificarea blocajelor și pregătirea pentru implementări software.</p>
+                <div class="p-6 border border-slate-200 rounded-2xl hover:shadow-xl transition bg-slate-50 flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-bold mb-4">03</div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Maparea Proceselor Economice</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">Analiza fluxurilor de lucru din companie și pregătirea pentru digitalizare și ERP.</p>
+                    </div>
                 </div>
-                <!-- Card 4 -->
-                <div class="p-8 border border-slate-200 rounded-xl hover:shadow-lg transition bg-slate-50 md:col-span-3">
-                    <div class="w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold mb-6">04</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Dezvoltare Aplicații Business</h3>
-                    <p class="text-slate-600 leading-relaxed text-sm">Dezvoltăm software personalizat, platforme web interne, automatizări de procese și integrări între sisteme existente.</p>
+                <div class="p-6 border border-blue-200 rounded-2xl hover:shadow-xl transition bg-blue-50/50 flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 bg-blue-600 text-white rounded-xl flex items-center justify-center font-bold mb-4">04</div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Dezvoltare Aplicații Business</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">Software la comandă, platforme web interne, automatizări și integrări API.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 max-w-4xl mx-auto px-6">
-        <div class="bg-white p-8 md:p-12 rounded-2xl shadow-lg border border-slate-200">
-            <h2 class="text-3xl font-bold text-slate-900 text-center mb-4">Hai să discutăm despre proiectul tău</h2>
-            <p class="text-slate-600 text-center mb-8">Completează formularul și te vom contacta în cel mai scurt timp.</p>
-            <form class="space-y-6">
-                <div class="grid md:grid-cols-2 gap-6">
+    <!-- Formular Contact Funcțional -->
+    <section id="contact" class="py-20 max-w-3xl mx-auto px-6">
+        <div class="bg-white p-8 md:p-12 rounded-3xl shadow-xl border border-slate-200">
+            <h2 class="text-3xl font-extrabold text-slate-900 text-center mb-2">Hai să discutăm despre proiectul tău</h2>
+            <p class="text-slate-600 text-center mb-8 text-sm">Trimite-ne un mesaj, iar echipa noastră te va contacta în cel mai scurt timp.</p>
+
+            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
+                <!-- Setari email de destinatie -->
+                <input type="hidden" name="access_key" value="eda4b69e-5c3c-4382-926f-265694a899b7">
+                <input type="hidden" name="subject" value="Mesaj nou de pe bmsro.com">
+                <input type="hidden" name="from_name" value="BMSRO Website">
+                <input type="hidden" name="to_email" value="ioan.godja@bmsro.ro">
+
+                <div class="grid md:grid-cols-2 gap-5">
                     <div>
-                        <label class="block text-sm font-medium text-slate-700 mb-2">Nume complet</label>
-                        <input type="text" placeholder="Ion Popescu" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:outline-none">
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Nume complet</label>
+                        <input type="text" name="name" required placeholder="Ion Popescu" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm">
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-slate-700 mb-2">Email</label>
-                        <input type="email" placeholder="ion@companie.ro" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:outline-none">
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Email</label>
+                        <input type="email" name="email" required placeholder="ion@companie.ro" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm">
                     </div>
                 </div>
+
                 <div>
-                    <label class="block text-sm font-medium text-slate-700 mb-2">Serviciu de interes</label>
-                    <select class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:outline-none">
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Serviciu de interes</label>
+                    <select name="service" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm">
                         <option>Consultanță Fiscală / Taxe / Contabilitate</option>
                         <option>Consultanță Juridică</option>
                         <option>Mapare Procese Economice</option>
@@ -116,18 +138,20 @@
                         <option>Pachet Complet (Consultanță + Software)</option>
                     </select>
                 </div>
+
                 <div>
-                    <label class="block text-sm font-medium text-slate-700 mb-2">Mesajul tău</label>
-                    <textarea rows="4" placeholder="Descrie pe scurt cerințele tale..." class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:outline-none"></textarea>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Mesajul tău</label>
+                    <textarea name="message" rows="4" required placeholder="Descrie pe scurt cerințele tale..." class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm"></textarea>
                 </div>
-                <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-lg font-bold hover:bg-blue-700 transition">Trimite Mesajul</button>
+
+                <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-500/20">Trimite Mesajul</button>
             </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm">
-        <p>© 2026 BMSRO. Toate drepturile rezervate.</p>
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-xs border-t border-slate-800">
+        <p>© 2026 BMSRO (Best Management Solutions). Toate drepturile rezervate.</p>
     </footer>
 
 </body>
