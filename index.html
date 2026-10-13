@@ -20,7 +20,6 @@
             <nav class="hidden md:flex space-x-8 font-medium text-slate-600 text-sm">
                 <a href="#despre" class="hover:text-blue-600 transition">Despre Noi</a>
                 <a href="#servicii" class="hover:text-blue-600 transition">Servicii</a>
-                <a href="#proces" class="hover:text-blue-600 transition">Metodologie</a>
                 <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
             </nav>
             <a href="#contact" class="bg-blue-600 text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-blue-700 transition shadow-md shadow-blue-500/20">Programează o Consultație</a>
@@ -28,91 +27,155 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="despre" class="max-w-7xl mx-auto px-6 py-16 md:py-24 md:flex items-center justify-between gap-12">
-        <div class="md:w-1/2 mb-12 md:mb-0">
+    <section id="despre" class="max-w-7xl mx-auto px-6 py-16 md:py-20 md:flex items-center justify-between gap-12">
+        <div class="md:w-1/2 mb-10 md:mb-0">
             <span class="inline-block text-blue-600 font-semibold tracking-wide uppercase text-xs bg-blue-50 border border-blue-100 px-3 py-1.5 rounded-full mb-4">Consultanță & Tehnologie</span>
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight">Consultanță Financiar-Juridică & Software la Comandă</h1>
-            <p class="text-slate-600 text-base sm:text-lg mt-4 font-medium leading-relaxed">Best Management Solutions — Partenerul tău pentru decizii inteligente și soluții software integrate. De la consultanță fiscală, contabilă și juridică, până la maparea proceselor economice și dezvoltarea aplicațiilor dedicate afacerii tale.</p>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight">Soluții Integrat de Management, Financiar, Legal & Software</h1>
+            <p class="text-slate-600 text-base sm:text-lg mt-4 font-medium leading-relaxed">Best Management Solutions — Partenerul tău pentru decizii inteligente și dezvoltare sustenabilă. Oferim suport complet de la înființarea companiei, servicii financiar-contabile, HR și juridic, până la digitalizarea fluxurilor și dezvoltarea aplicațiilor software dedicate.</p>
             
             <div class="mt-8 flex flex-col sm:flex-row gap-4">
                 <a href="#contact" class="bg-blue-600 text-white text-center px-6 py-3.5 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-500/20">Solicită Ofertă Personalizată</a>
-                <a href="#servicii" class="border border-slate-300 text-slate-700 text-center px-6 py-3.5 rounded-xl font-semibold hover:bg-slate-100 transition">Explorează Serviciile</a>
+                <a href="#servicii" class="border border-slate-300 text-slate-700 text-center px-6 py-3.5 rounded-xl font-semibold hover:bg-slate-100 transition">Vezi Toate Serviciile</a>
             </div>
         </div>
 
         <div class="md:w-1/2">
             <div class="bg-gradient-to-br from-blue-900 via-slate-900 to-blue-950 text-white p-8 sm:p-10 rounded-3xl shadow-2xl relative overflow-hidden border border-slate-800">
-                <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl"></div>
-                <h3 class="text-2xl font-bold mb-6 text-white flex items-center gap-2">
-                    De ce BMSRO?
-                </h3>
-                <ul class="space-y-5 text-slate-200 text-sm sm:text-base">
+                <h3 class="text-2xl font-bold mb-6 text-white">De ce aleg companiile BMSRO?</h3>
+                <ul class="space-y-4 text-slate-200 text-sm sm:text-base">
                     <li class="flex items-start gap-3">
                         <span class="bg-blue-500/20 text-blue-400 p-1 rounded-lg font-bold text-xs">✓</span>
-                        <span><strong>Viziune integrată:</strong> Financiar + Juridic + Tehnologie.</span>
+                        <span><strong>Suport 360°:</strong> Înființare, Contabilitate, Legal, HR și Software sub un singur acoperiș.</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <span class="bg-blue-500/20 text-blue-400 p-1 rounded-lg font-bold text-xs">✓</span>
-                        <span><strong>Optimizare:</strong> Digitalizarea și eficientizarea proceselor economice.</span>
+                        <span><strong>Eficiență Fără Blocaje:</strong> Mapăm corect procesele înainte de a le automatiza prin software.</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <span class="bg-blue-500/20 text-blue-400 p-1 rounded-lg font-bold text-xs">✓</span>
-                        <span><strong>Software dedicat:</strong> Aplicații de business croite exact pe specificațiile tale.</span>
+                        <span><strong>Conformitate & Siguranță:</strong> Risc fiscal și juridic minimizat prin consultanță proactivă.</span>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- Servicii -->
+    <!-- Servicii Modulare -->
     <section id="servicii" class="bg-white py-20 border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-3xl font-extrabold text-slate-900">Serviciile Noastre</h2>
-                <p class="text-slate-600 mt-3">Soluții complete de consultanță de management și tehnologie pentru afacerea ta.</p>
+                <p class="text-slate-600 mt-3">Sistem modular de servicii adaptat fiecărei etape din viața afacerii tale.</p>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="p-6 border border-slate-200 rounded-2xl hover:shadow-xl transition bg-slate-50 flex flex-col justify-between">
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1: Infiintari Firme -->
+                <div class="p-8 border border-slate-200 rounded-2xl hover:shadow-xl hover:border-blue-300 transition bg-slate-50/50 flex flex-col justify-between">
                     <div>
-                        <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-bold mb-4">01</div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-2">Consultanță Business & Taxe</h3>
-                        <p class="text-slate-600 text-xs leading-relaxed">Planificare fiscală, strategie de afaceri, optimizare de costuri și conformitate legislativă.</p>
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-bold text-lg mb-6">01</div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Înființări Firme & Modificări ONRC</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Te ajutăm să pui bazele afacerii tale rapid și fără bătăi de cap administrative.</p>
+                        <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-200 pt-4">
+                            <li>• Înființare SRL, PFA, II la Registrul Comerțului</li>
+                            <li>• Redactare act constitutiv și rezervare denumire</li>
+                            <li>• Deschidere puncte de lucru, schimbare sediu social, adăugare coduri CAEN</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="p-6 border border-slate-200 rounded-2xl hover:shadow-xl transition bg-slate-50 flex flex-col justify-between">
+
+                <!-- Card 2: Contabilitate -->
+                <div class="p-8 border border-slate-200 rounded-2xl hover:shadow-xl hover:border-blue-300 transition bg-slate-50/50 flex flex-col justify-between">
                     <div>
-                        <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-bold mb-4">02</div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-2">Contabilitate & Juridic</h3>
-                        <p class="text-slate-600 text-xs leading-relaxed">Servicii contabile complete, raportare financiară și consultanță juridică comercială.</p>
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-bold text-lg mb-6">02</div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Servicii Contabile Complete</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Evidență contabilă riguroasă și raportare financiară transparentă pentru decizii de business corecte.</p>
+                        <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-200 pt-4">
+                            <li>• Întocmire și depunere declarații fiscale obligatorii</li>
+                            <li>• Închidere de lună, bilanțuri contabile și verificare balanță</li>
+                            <li>• Rapoarte financiare periodice pentru management (Profit & Loss, Cashflow)</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="p-6 border border-slate-200 rounded-2xl hover:shadow-xl transition bg-slate-50 flex flex-col justify-between">
+
+                <!-- Card 3: Consultanta Taxe & Fiscalitate -->
+                <div class="p-8 border border-slate-200 rounded-2xl hover:shadow-xl hover:border-blue-300 transition bg-slate-50/50 flex flex-col justify-between">
                     <div>
-                        <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-bold mb-4">03</div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-2">Maparea Proceselor Economice</h3>
-                        <p class="text-slate-600 text-xs leading-relaxed">Analiza fluxurilor de lucru din companie și pregătirea pentru digitalizare și ERP.</p>
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-bold text-lg mb-6">03</div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Consultanță Taxe & Fiscalitate</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Optimizare fiscală legală și asistență de specialitate în relația cu autoritățile statului.</p>
+                        <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-200 pt-4">
+                            <li>• Planificare și optimizare fiscală a taxelor</li>
+                            <li>• Asistență în timpul controalelor ANAF</li>
+                            <li>• Audit fiscal și identificarea riscurilor înainte de inspecții</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="p-6 border border-blue-200 rounded-2xl hover:shadow-xl transition bg-blue-50/50 flex flex-col justify-between">
+
+                <!-- Card 4: Consultanta Juridica -->
+                <div class="p-8 border border-slate-200 rounded-2xl hover:shadow-xl hover:border-blue-300 transition bg-slate-50/50 flex flex-col justify-between">
                     <div>
-                        <div class="w-10 h-10 bg-blue-600 text-white rounded-xl flex items-center justify-center font-bold mb-4">04</div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-2">Dezvoltare Aplicații Business</h3>
-                        <p class="text-slate-600 text-xs leading-relaxed">Software la comandă, platforme web interne, automatizări și integrări API.</p>
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-bold text-lg mb-6">04</div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Consultanță Juridică Comercială</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Protecție legală continuă pentru operațiunile comerciale și tranzacțiile companiei tale.</p>
+                        <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-200 pt-4">
+                            <li>• Redactare, verificare și negociere contracte comerciale</li>
+                            <li>• Asistență în litigii comerciale și recuperare creanțe</li>
+                            <li>• Conformitate legislativă (GDPR, protecția consumatorului)</li>
+                        </ul>
                     </div>
                 </div>
+
+                <!-- Card 5: Resurse Umane & Salarizare -->
+                <div class="p-8 border border-slate-200 rounded-2xl hover:shadow-xl hover:border-blue-300 transition bg-slate-50/50 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-bold text-lg mb-6">05</div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Resurse Umane & Salarizare (HR)</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Administrare personal și salarizare fărǎ erori, în deplină conformitate cu Codul Muncii.</p>
+                        <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-200 pt-4">
+                            <li>• Calcul salarial, întocmire fluturași și depunere REVISAL / D112</li>
+                            <li>• Redactare contracte individuale de muncă, acte adiționale și fișe de post</li>
+                            <li>• Suport în cercetări disciplinare și încetări de contracte</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 6: Mapare Procese -->
+                <div class="p-8 border border-slate-200 rounded-2xl hover:shadow-xl hover:border-blue-300 transition bg-slate-50/50 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-bold text-lg mb-6">06</div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Maparea Proceselor Economice</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Analiza detaliată a fluxurilor interne pentru eliminarea risipei de timp și pregătirea digitalizării.</p>
+                        <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-200 pt-4">
+                            <li>• Audit operațional As-Is vs. To-Be</li>
+                            <li>• Identificarea gâturilor de sticlă (bottlenecks) din departamente</li>
+                            <li>• Pregătirea caietului de sarcini pentru implementări ERP / CRM</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 7: Dezvoltare Software (Full Width / Highlighted) -->
+                <div class="p-8 border border-blue-200 rounded-2xl hover:shadow-xl transition bg-gradient-to-br from-blue-50/60 to-slate-50 md:col-span-2 lg:col-span-3 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
+                    <div class="max-w-3xl">
+                        <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center font-bold text-lg mb-4">07</div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3">Dezvoltare Aplicații Business & Automatizări Software</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Construim software croit exact pe procesele unice ale companiei tale. De la platforme interne de gestiune, tablouri de bord pentru management (BI), până la automatizări de fluxuri între sisteme (integrări API, e-Factură, ERP).</p>
+                    </div>
+                    <a href="#contact" class="bg-blue-600 text-white text-center px-6 py-3.5 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-500/20 whitespace-nowrap">Discută Proiectul Software</a>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Formular Contact Funcțional -->
+    <!-- Formular Contact -->
     <section id="contact" class="py-20 max-w-3xl mx-auto px-6">
         <div class="bg-white p-8 md:p-12 rounded-3xl shadow-xl border border-slate-200">
             <h2 class="text-3xl font-extrabold text-slate-900 text-center mb-2">Hai să discutăm despre proiectul tău</h2>
             <p class="text-slate-600 text-center mb-8 text-sm">Trimite-ne un mesaj, iar echipa noastră te va contacta în cel mai scurt timp.</p>
 
             <form action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
-                <!-- Setari email de destinatie -->
-                <input type="hidden" name="access_key" value="eda4b69e-5c3c-4382-926f-265694a899b7">
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
                 <input type="hidden" name="subject" value="Mesaj nou de pe bmsro.com">
                 <input type="hidden" name="from_name" value="BMSRO Website">
                 <input type="hidden" name="to_email" value="ioan.godja@bmsro.ro">
@@ -129,19 +192,22 @@
                 </div>
 
                 <div>
-                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Serviciu de interes</label>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Serviciu de interes principal</label>
                     <select name="service" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm">
-                        <option>Consultanță Fiscală / Taxe / Contabilitate</option>
+                        <option>Înființare Firmă / Modificări ONRC</option>
+                        <option>Contabilitate</option>
+                        <option>Consultanță Taxe / Fiscalitate</option>
                         <option>Consultanță Juridică</option>
+                        <option>Resurse Umane & Salarizare (HR)</option>
                         <option>Mapare Procese Economice</option>
-                        <option>Dezvoltare Soluție Software</option>
-                        <option>Pachet Complet (Consultanță + Software)</option>
+                        <option>Dezvoltare Aplicație Software</option>
+                        <option>Pachet Integrat (Consultanță + Software)</option>
                     </select>
                 </div>
 
                 <div>
                     <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Mesajul tău</label>
-                    <textarea name="message" rows="4" required placeholder="Descrie pe scurt cerințele tale..." class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm"></textarea>
+                    <textarea name="message" rows="4" required placeholder="Descrie pe scurt nevoile firmei tale..." class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm"></textarea>
                 </div>
 
                 <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-500/20">Trimite Mesajul</button>
