@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - BMSRO Best Management Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-50 text-slate-800 font-['Inter'] flex flex-col min-h-screen justify-between">
+
+    <!-- Header / Navigatie -->
+    <header class="bg-white/90 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex flex-col">
+                <div class="text-2xl font-black text-blue-900 tracking-tight">BMS<span class="text-blue-600">RO</span></div>
+                <span class="text-[10px] font-bold text-slate-400 tracking-wider uppercase -mt-1">Best Management Solutions</span>
+            </a>
+            <nav class="flex space-x-8 font-medium text-slate-600 text-sm">
+                <a href="index.html" class="hover:text-blue-600 transition">Acasă</a>
+                <a href="index.html#servicii" class="hover:text-blue-600 transition">Servicii</a>
+                <a href="contact.html" class="text-blue-600 font-bold">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sectiune Contact Dedicata -->
+    <main class="py-16 max-w-7xl mx-auto px-6 w-full">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900">Contactează-ne</h1>
+            <p class="text-slate-600 mt-3 text-sm">Suntem la dispoziția ta pentru consultanță de management, servicii financiar-contabile, juridice și dezvoltare de soluții software.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+            
+            <!-- Inforamtiide contact actualizate -->
+            <div class="bg-gradient-to-br from-blue-900 to-slate-900 text-white p-8 md:p-10 rounded-3xl flex flex-col justify-between shadow-xl">
+                <div>
+                    <h3 class="text-xl font-extrabold mb-6">Informații Directe</h3>
+                    
+                    <div class="space-y-6 text-sm">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-blue-600/30 text-blue-400 rounded-xl flex items-center justify-center font-bold shrink-0">📞</div>
+                            <div>
+                                <span class="block text-xs text-slate-400 uppercase tracking-wider font-semibold">Telefon</span>
+                                <a href="tel:+40741023716" class="text-white font-bold hover:text-blue-400 transition text-base">+40 741 023 716</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-blue-600/30 text-blue-400 rounded-xl flex items-center justify-center font-bold shrink-0">✉</div>
+                            <div>
+                                <span class="block text-xs text-slate-400 uppercase tracking-wider font-semibold">E-mail Oficial</span>
+                                <a href="mailto:office@bmsro.ro" class="text-white font-bold hover:text-blue-400 transition text-base">office@bmsro.ro</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-blue-600/30 text-blue-400 rounded-xl flex items-center justify-center font-bold shrink-0">🌐</div>
+                            <div>
+                                <span class="block text-xs text-slate-400 uppercase tracking-wider font-semibold">Web Domain</span>
+                                <span class="text-white font-bold">bmsro.com / bmsro.ro</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-slate-800 pt-6 mt-8">
+                    <p class="text-xs text-slate-400"><strong>BMSRO</strong> — Best Management Solutions</p>
+                </div>
+            </div>
+
+            <!-- Formular de trimitere sigura (Formspree) -->
+            <div class="lg:col-span-2 bg-white p-8 md:p-10 rounded-3xl shadow-xl border border-slate-200">
+                <h2 class="text-2xl font-extrabold text-slate-900 mb-2">Trimite un Mesaj</h2>
+                <p class="text-slate-600 mb-8 text-sm">Completează formularul, iar un consultant BMSRO te va contacta în cel mai scurt timp.</p>
+
+                <form action="https://formspree.io/f/office@bmsro.ro" method="POST" class="space-y-5">
+                    
+                    <div class="grid md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Nume complet *</label>
+                            <input type="text" name="name" required placeholder="Ion Popescu" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Email *</label>
+                            <input type="email" name="email" required placeholder="ion@companie.ro" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm">
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Număr de Telefon *</label>
+                            <input type="tel" name="phone" required placeholder="07xx xxx xxx" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Companie (Opțional)</label>
+                            <input type="text" name="company" placeholder="SC Firmamea SRL" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Serviciu de interes principal</label>
+                        <select name="service" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm">
+                            <option>01. Dezvoltare Aplicații Business & Automatizări Software</option>
+                            <option>02. Consultanță Taxe & Fiscalitate</option>
+                            <option>03. Consultanță Juridică Comercială</option>
+                            <option>04. Analiză Financiar-Managerială & Raportare Strategică</option>
+                            <option>05. Resurse Umane & Salarizare (HR)</option>
+                            <option>06. Servicii Contabile Complete</option>
+                            <option>07. Înființări Firme & Modificări ONRC</option>
+                            <option>Pachet Integrat (Consultanță + Software)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Mesajul tău *</label>
+                        <textarea name="message" rows="4" required placeholder="Descrie pe scurt cerințele tale..." class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-500/20">Trimite Solicitarea</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-xs border-t border-slate-800">
+        <p>© 2026 BMSRO (Best Management Solutions). Toate drepturile rezervate.</p>
+    </footer>
+
+</body>
+</html>
