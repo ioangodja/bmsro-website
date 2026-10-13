@@ -33,7 +33,7 @@
 
         <div class="grid lg:grid-cols-3 gap-8">
             
-            <!-- Inforamtiide contact actualizate -->
+            <!-- Informatii de contact directe -->
             <div class="bg-gradient-to-br from-blue-900 to-slate-900 text-white p-8 md:p-10 rounded-3xl flex flex-col justify-between shadow-xl">
                 <div>
                     <h3 class="text-xl font-extrabold mb-6">Informații Directe</h3>
@@ -70,38 +70,38 @@
                 </div>
             </div>
 
-            <!-- Formular de trimitere sigura (Formspree) -->
+            <!-- Formular de contact direct (Mailto) -->
             <div class="lg:col-span-2 bg-white p-8 md:p-10 rounded-3xl shadow-xl border border-slate-200">
                 <h2 class="text-2xl font-extrabold text-slate-900 mb-2">Trimite un Mesaj</h2>
-                <p class="text-slate-600 mb-8 text-sm">Completează formularul, iar un consultant BMSRO te va contacta în cel mai scurt timp.</p>
+                <p class="text-slate-600 mb-8 text-sm">Completează datele de mai jos, iar la apăsarea butonului se va deschide aplicația ta de e-mail pregătită cu mesajul către noi.</p>
 
-                <form action="https://formspree.io/f/office@bmsro.ro" method="POST" class="space-y-5">
+                <form action="mailto:office@bmsro.ro" method="GET" enctype="text/plain" class="space-y-5">
                     
                     <div class="grid md:grid-cols-2 gap-5">
                         <div>
                             <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Nume complet *</label>
-                            <input type="text" name="name" required placeholder="Ion Popescu" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm">
+                            <input type="text" name="Nume" required placeholder="Ion Popescu" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm">
                         </div>
                         <div>
                             <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Email *</label>
-                            <input type="email" name="email" required placeholder="ion@companie.ro" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm">
+                            <input type="email" name="Email" required placeholder="ion@companie.ro" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm">
                         </div>
                     </div>
 
                     <div class="grid md:grid-cols-2 gap-5">
                         <div>
                             <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Număr de Telefon *</label>
-                            <input type="tel" name="phone" required placeholder="07xx xxx xxx" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm">
+                            <input type="tel" name="Telefon" required placeholder="07xx xxx xxx" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm">
                         </div>
                         <div>
                             <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Companie (Opțional)</label>
-                            <input type="text" name="company" placeholder="SC Firmamea SRL" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm">
+                            <input type="text" name="Companie" placeholder="SC Firmamea SRL" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm">
                         </div>
                     </div>
 
                     <div>
                         <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Serviciu de interes principal</label>
-                        <select name="service" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm">
+                        <select name="Serviciu_Solicitat" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm">
                             <option>01. Dezvoltare Aplicații Business & Automatizări Software</option>
                             <option>02. Consultanță Taxe & Fiscalitate</option>
                             <option>03. Consultanță Juridică Comercială</option>
@@ -115,10 +115,10 @@
 
                     <div>
                         <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Mesajul tău *</label>
-                        <textarea name="message" rows="4" required placeholder="Descrie pe scurt cerințele tale..." class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm"></textarea>
+                        <textarea name="body" rows="4" required placeholder="Descrie pe scurt cerințele tale..." class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm"></textarea>
                     </div>
 
-                    <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-500/20">Trimite Solicitarea</button>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-500/20">Trimite Mesajul către office@bmsro.ro</button>
                 </form>
             </div>
 
